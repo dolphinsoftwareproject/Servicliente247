@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  /* Ocupar el 100% de la página */
+  height: 100%;
+ 
+}
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  color: #56595e;
+  background: #f8f8f8;
+  font-size: 1.2rem;
+  /* Ocupar el 100% de la página */
+  min-height: 100%;
+   
+}
+li {
+  display: inline-block;
+}
+a {
+  display: block;
+
+  padding: 0.5em;
+  text-decoration: none;
+  color: #56595e;
+}
+a:hover {
+  color: rgb(243, 242, 242);
+  background: #4d4f55;
+  border-radius: 3px;
+}
+
+
+.contenedor {
+	/* width: 95%; */ 
+	max-width: 900px;
+	margin: 16px ;
+	display: grid;
+	gap: 1em;
+	grid-template-columns: 1fr;
+	grid-template-rows: 90px auto auto 90px;
+	grid-template-areas: "header"
+    "navegacion"
+    "principal"    
+    "footer";
+	font-size: large;
+}
+
+.header {
+	grid-area: header;
+	border: 1px solid #4d4f55;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px 1px rgb(163, 159, 159);
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 50px;
+	text-decoration: blink;
+	font-style: italic;
+}
+
+.titulo {
+  grid-area: titulo;
+  background: #eaeaec;
+  border: 1px solid #4d4f55;
+  border-radius: 4px;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-shadow: 1px 1px 3px 1px rgb(163, 159, 159);
+}
+.header h1 {
+  text-shadow: 1px 1px 2px #f7f7f7, 1px 1px 5px #767677,
+    3px 3px 2px rgb(228, 229, 230);
+  color: #5e5f5f;
+}
+
+
+.navegacion {
+  grid-area: navegacion;
+  border: 1px solid #4d4f55;
+  background: #eaeaec;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px 1px rgb(163, 159, 159);
+}
+
+.section {
+  grid-area: section;
+  border: none;
+}
+
+.principal {
+  grid-area: principal;
+  border: none;
+}
+li:hover {
+  color: #2c2d2e;
+}
+.navegacion ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  grid-area: footer;
+ border-top: 1px solid #4d4f55;
+ width: 90%;
+
+}
+.principal p {
+  padding: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.formulario {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  height: 600px;
+  width: 538px;
+  border: 1px solid rgb(171, 175, 171);
+  margin-bottom: 10px;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.formulario .inDat {
+  height: 40px;
+  width: 500px;
+}
+
+
+
+.boton {
+  width: 150px;
+  height: 40px;
+  color: #56595e;
+  padding: 10px;
+  border: 1px solid rgb(54, 53, 53);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 1px black;
+}
+
+.boton2 {
+  width: 100px;
+  height: 30px;
+  color: #56595e;
+  padding: 0.4px;
+  border: 1px solid rgb(54, 53, 53);
+  border-radius: 7px;
+  box-shadow: 1px 1px 3px 1px black;
+}
+
+.boton:hover {
+  color: rgb(34, 36, 34);
+  border-color: rgb(5, 117, 29);
+}
+
+.table {
+  margin-top: 1em;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #848486;
+}
+.mTable {
+  max-width: 1200px;
+  overflow: scroll;
+}
+
+.table th {
+  background: linear-gradient(
+    to bottom,
+    rgba(45, 45, 46, 0.3),
+    rgba(240, 238, 238, 0.5)
+  );
+  border: 1px solid #4d4f55;
+}
+.table td {
+  padding: 10px;
+  border: 1px solid rgb(97, 96, 97);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dbd8da;
+}
+
+
+.boton:hover {
+  color: rgb(34, 36, 34);
+  border-color: rgb(5, 117, 29);
+}
+.boton2:hover {
+  color: rgb(34, 36, 34);
+  border-color: rgb(5, 117, 29);
+}
+
+
+

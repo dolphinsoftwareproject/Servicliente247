@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>Servicliente247</title>
+  </head>
+  <body>
+    <div class="contenedor" id="app">     
+      <header class="header">
+          <img src="images/pqr.jpg" /> Servicliente247         
+      </header> 
+
+      <nav class="navegacion">
+        <ul>  
+          <li><a @click="opcion=0" href="#">Registrar Pqrs</a></li>        
+          <li><label>***********</label></li>        
+          <li><a @click="opcion=1 " href="#" >Gestionar PQRS</a></li>
+          <li><a @click="opcion=2 " href="#">PQRS por Tipo</a></li>
+          <li><a @click="opcion=3 " href="#">PQRS por Estado</a></li>
+          <li><a @click="opcion=4 " href="#">PQRS por Agente</a></li>
+        </ul>
+      </nav>
+      
+      <seccion class="principal">
+          
+        <form-pqrs v-if="opcion==0"></form-pqrs>
+        <listado-pqrs v-if="opcion==1" ></listado-pqrs>
+        <tipo v-if="opcion==2"></tipo>
+        <estado v-if="opcion==3"></estado>
+        <agente v-if="opcion==4"></agente>
+      </seccion>
+
+      <footer class="footer">
+        <p>&copy; 2021 Servicliente247</p>
+        <p>* Maria Fernanda Rodriguez * Diego Mauricio Castro * Luis Eduardo Navarro *</p>
+        <p>* Daniel Merchan * Geuner Giovanny Paez * </p> 
+      </footer>
+    
+    </div>
+  </body>
+  <script src="js/vue.js"></script>
+  <script src="js/componentes/componentes.js"></script>
+</html>
